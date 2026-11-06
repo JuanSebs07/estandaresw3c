@@ -26,16 +26,19 @@
                 <input type="number" id="numero" name="numero">
             </p>
             <p>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" class="label" name="ema_user" placeholder="Ingrese su email" autocomplete="email">
+                <label for="email">E-mail (obligatorio)</label>
+                <input type="email" id="email" class="label" name="ema_user" placeholder="Ingrese su email" autocomplete="email" required aria-describedby="error-email">
+                <span class="error" id="error-email"></span>
             </p>
             <p>
-                <label for="nombres">Nombre</label>
-                <input type="text" id="nombres" class="label" name="name_user" placeholder="Ingrese sus Nombres" autocomplete="given-name">
+                <label for="nombres">Nombre (obligatorio)</label>
+                <input type="text" id="nombres" class="label" name="name_user" placeholder="Ingrese sus Nombres" autocomplete="given-name" required aria-describedby="error-nombres">
+                <span class="error" id="error-nombres"></span>
             </p>
             <p>
-                <label for="apellidos">Apellido</label>
-                <input type="text" id="apellidos" class="label" name="ape_user" placeholder="Ingrese sus Apellidos" autocomplete="family-name">
+                <label for="apellidos">Apellido (obligatorio)</label>
+                <input type="text" id="apellidos" class="label" name="ape_user" placeholder="Ingrese sus Apellidos" autocomplete="family-name" required aria-describedby="error-apellidos">
+                <span class="error" id="error-apellidos"></span>
             </p>
             <p>
                 <label for="fecha">Fecha de nacimiento</label>
@@ -65,8 +68,9 @@
                 <textarea id="comentarios" name="comentarios" cols="15" rows="6"></textarea>
             </p>
             <div class="botoncito_registrar">
-                <input type="button" id="bt" name="bt" value="Enviar la informacion">
+                <button type="submit" id="bt" name="bt">Enviar la informacion</button>
             </div>
+            <p id="mensaje-formulario" role="status"></p>
         </form>
         <h2>Integrantes</h2>
         <ul>
