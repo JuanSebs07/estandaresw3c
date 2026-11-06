@@ -60,3 +60,48 @@ input[type="button"], button {
     padding: 0.5rem 1rem;
     border: 2px solid black;
 }
+
+/* Diseño adaptable */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+.opcion label {
+    display: inline;
+    font-weight: normal;
+}
+input[type="text"], input[type="email"], input[type="number"],
+input[type="date"], input[type="url"], textarea {
+    width: 100%;
+    max-width: 25rem;
+    font-size: 1rem;
+}
+@media (max-width: 40rem) {
+    body {
+        padding: 0.5rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
