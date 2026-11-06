@@ -20,22 +20,54 @@
     </header>
     <main>
         <h1>Formulario</h1>
-       <form name="datos">
-        <input type="number">Numero<br>
-        <input type="email" class="label" name="ema_user"   placeholder="Ingrese su email">E-mail<br>
-        <input type="text" class="label" name="name_user" placeholder="Ingrese sus Nombres">Nombre<br>
-        <input type="text" class="label" name="ape_user" placeholder="Ingrese sus Apellidos">Apellido<br>
-        <input type="date">Fechade nacimiento<br>
-        <input type="url">Pagina web<br>
-    <label>Que estandares conoces?</label><br>
-    <input type="checkbox" value="HTML5" checked>html5<br>
-    <input type="checkbox" value="CSS3">CSS3<br>
-    <input type="checkbox" value="Javascript">Javascricpt<br>
-    <textarea cols="15" rows="6"></textarea>
-    <br>
-    <div class="botoncito_registrar">
-        <input type="button" name="bt" style="background-color: darkgreen; color:white"  value="Enviar la informacion"><br></div>
-       </form>
+        <form name="datos">
+            <p>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" name="numero">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="label" name="ema_user" placeholder="Ingrese su email" autocomplete="email">
+            </p>
+            <p>
+                <label for="nombres">Nombre</label>
+                <input type="text" id="nombres" class="label" name="name_user" placeholder="Ingrese sus Nombres" autocomplete="given-name">
+            </p>
+            <p>
+                <label for="apellidos">Apellido</label>
+                <input type="text" id="apellidos" class="label" name="ape_user" placeholder="Ingrese sus Apellidos" autocomplete="family-name">
+            </p>
+            <p>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha" autocomplete="bday">
+            </p>
+            <p>
+                <label for="pagina">Página web</label>
+                <input type="url" id="pagina" name="pagina" autocomplete="url">
+            </p>
+            <fieldset>
+                <legend>¿Qué estándares conoces?</legend>
+                <div class="opcion">
+                    <input type="checkbox" id="html5" name="estandares" value="HTML5" checked>
+                    <label for="html5">HTML5</label>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" id="css3" name="estandares" value="CSS3">
+                    <label for="css3">CSS3</label>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" id="javascript" name="estandares" value="Javascript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+            </fieldset>
+            <p>
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" cols="15" rows="6"></textarea>
+            </p>
+            <div class="botoncito_registrar">
+                <input type="button" id="bt" name="bt" style="background-color: darkgreen; color:white" value="Enviar la informacion">
+            </div>
+        </form>
         <h2>Integrantes</h2>
         <ul>
             <li>Genner Leandro Rivas Romero</li>
