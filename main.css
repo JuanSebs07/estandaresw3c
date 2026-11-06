@@ -1,5 +1,6 @@
 body {
-    background-color: bisque;
+    background-color: cyan;
+    color: darkblue;
 }
 h1, h2, h3, h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,4 +11,12 @@ ul {
 }
 form {
     color: blueviolet;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+input[type="button"], button {
+    background-color: darkgreen;
+    color: white;
 }
